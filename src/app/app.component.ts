@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {HeaderComponent} from './header/header.component';
 import {UserInputComponent} from './user-input/user-input.component';
+import {UserInputModel} from './user-input/user-input-model';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,8 @@ import {UserInputComponent} from './user-input/user-input.component';
 })
 export class AppComponent {
   title = 'investment-calculator-1';
+
+  submitUserInput(userInputModel: UserInputModel) {
+    console.log(userInputModel)
+  }
 }
